@@ -1,0 +1,61 @@
+Name:	firefox
+Umask:	0002
+State:	S (sleeping)
+Tgid:	3051
+Ngid:	0
+Pid:	3051
+PPid:	1705
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+FDSize:	512
+Groups:	4 20 24 27 30 46 122 135 136 1000 
+NStgid:	3051
+NSpid:	3051
+NSpgid:	1705
+NSsid:	1705
+Kthread:	0
+VmPeak:	29182744 kB
+VmSize:	12405072 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	  616680 kB
+VmRSS:	  548660 kB
+RssAnon:	  278000 kB
+RssFile:	  250776 kB
+RssShmem:	   19884 kB
+VmData:	  595288 kB
+VmStk:	     136 kB
+VmExe:	     848 kB
+VmLib:	  268468 kB
+VmPTE:	    2708 kB
+VmSwap:	       0 kB
+HugetlbPages:	       0 kB
+CoreDumping:	0
+THP_enabled:	1
+untag_mask:	0xffffffffffffffff
+Threads:	122
+SigQ:	0/29298
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000000000
+SigIgn:	0000000000001000
+SigCgt:	0000000f00014eff
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	000001ffffffffff
+CapAmb:	0000000000000000
+NoNewPrivs:	0
+Seccomp:	2
+Seccomp_filters:	2
+Speculation_Store_Bypass:	thread vulnerable
+SpeculationIndirectBranch:	conditional enabled
+Cpus_allowed:	f
+Cpus_allowed_list:	0-3
+Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	62843
+nonvoluntary_ctxt_switches:	112757
+x86_Thread_features:	
+x86_Thread_features_locked:	
