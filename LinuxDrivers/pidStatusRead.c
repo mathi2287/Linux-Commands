@@ -34,7 +34,7 @@ int main(void){
             tmpFile = fopen(pid_Status_Path,"r");
             if(tmpFile == NULL){
                 printf("Error opening %s\n", pid_Status_Path);
-                return -1;
+                exit(0);
             }
 
             while (fgets(buffer, 500, tmpFile) != NULL)  // read first 500 chars from src file
