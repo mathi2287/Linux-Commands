@@ -41,6 +41,8 @@ int main(void){
             {
                 fputs(buffer, opFile);     // write contents in buffer into op file
             }
+            fclose(tmpFile);
+            fclose(opFile);
 
             printf("Successfully written to %s\n", TARGET_OP_FILE);
             return 0;
@@ -49,6 +51,7 @@ int main(void){
         entry = readdir(sDir);   //everytime it runs points to next file in current dir
     }
 
+    closedir(sDir);
     printf("Element not found");
     
     return 0;
