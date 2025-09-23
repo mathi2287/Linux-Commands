@@ -1,0 +1,130 @@
+1.grep technology demoFile.txt - print lines matching with keyword (technology)
+	technology helps people learn, 
+	and technology helps people work. 
+	In modern life, technology is everywhere: from phones to computers, 
+	People rely on technology to solve problems, people rely on technology 
+	to save time, and people rely on technology to stay connected. 
+	Although technology makes life easier, 
+	technology also brings challenges that people must address carefully.
+
+2.ls | grep file
+	file1.txt
+	file2.txt
+	file3.txt
+	
+3.grep -i casesensitive demoFile.txt - for ignore case sensitive
+	demoFile.txt:CaseSensitive casesensitive CASESENSITIVE
+	
+4.grep -v Mathi file1.txt - print every lines except keyword matching line
+	Anish
+	Amar
+	Ajay
+	Kalai
+	
+5.grep -c technology demoFile.txt - to print total count of given keyword.
+	7
+
+6.grep -w in demoFile.txt - to print exact word present in file (only print tech, not like technology, technician, etc..)
+	grep is a powerful command in Linux
+	
+7.grep -n technology demoFile.txt - to print the line number of matching keyword.
+	3:technology helps people learn, 
+	4:and technology helps people work. 
+	5:In modern life, technology is everywhere: from phones to computers, 
+	7:People rely on technology to solve problems, people rely on technology 
+	8:to save time, and people rely on technology to stay connected. 
+	9:Although technology makes life easier, 
+	10:technology also brings challenges that people must address carefully.
+
+8.grep -i technology demoFile.txt file1.txt - to print keyword matching lines with ignore case sensitives.
+	demoFile.txt:Technology is changing the world every day. 
+	demoFile.txt:Technology helps people connect, 
+	demoFile.txt:technology helps people learn, 
+	demoFile.txt:and technology helps people work. 
+	demoFile.txt:In modern life, technology is everywhere: from phones to computers, 
+	demoFile.txt:People rely on technology to solve problems, people rely on technology 
+	demoFile.txt:to save time, and people rely on technology to stay connected. 
+	demoFile.txt:Although technology makes life easier, 
+	demoFile.txt:technology also brings challenges that people must address carefully.
+	file1.txt:technology
+	file1.txt:Technology
+	
+9.grep -h technology demoFile.txt file1.txt - shows matching word line without filenames.
+	technology helps people learn, 
+	and technology helps people work. 
+	In modern life, technology is everywhere: from phones to computers, 
+	People rely on technology to solve problems, people rely on technology 
+	to save time, and people rely on technology to stay connected. 
+	Although technology makes life easier, 
+	technology also brings challenges that people must address carefully.
+	technology
+	
+10.grep -e technology -e grep demoFile.txt - To search multiple keywords in a file ( -e or | with egrep )
+	technology helps people learn, 
+	and technology helps people work. 
+	In modern life, technology is everywhere: from phones to computers, 
+	People rely on technology to solve problems, people rely on technology 
+	to save time, and people rely on technology to stay connected. 
+	Although technology makes life easier, 
+	technology also brings challenges that people must address carefully.
+	# Some random text for grep practice
+	grep is a powerful command in Linux
+	Searching with grep makes text processing easier
+	Repeat Repeat Repeat for testing grep -c
+egrep "technology|grep" demoFile.txt
+	technology helps people learn, 
+	and technology helps people work. 
+	In modern life, technology is everywhere: from phones to computers, 
+	People rely on technology to solve problems, people rely on technology 
+	to save time, and people rely on technology to stay connected. 
+	Although technology makes life easier, 
+	technology also brings challenges that people must address carefully.
+	# Some random text for grep practice
+	grep is a powerful command in Linux
+	Searching with grep makes text processing easier
+	Repeat Repeat Repeat for testing grep -c
+	
+11.grep -l technology demoFile.txt file1.txt - To only print the file_name which matches given keywords
+	demoFile.txt
+
+12.grep -f file1.txt demoFile.txt - Get the keyword pattern from one file and match with another file  ( -f points to file1, takes this pattern/keywords as reference and search with file2)
+	Technology is changing the world every day. 
+	Technology helps people connect, 
+	technology helps people learn, 
+	and technology helps people work. 
+	In modern life, technology is everywhere: from phones to computers, 
+	People rely on technology to solve problems, people rely on technology 
+	to save time, and people rely on technology to stay connected. 
+	Although technology makes life easier, 
+	technology also brings challenges that people must address carefully.
+
+13.grep -i ^t demoFile.txt - Print the matching line which start with given keyword with ignoring case sensitives
+	Technology is changing the world every day. 
+	Technology helps people connect, 
+	technology helps people learn, 
+	to save time, and people rely on technology to stay connected. 
+	technology also brings challenges that people must address carefully.
+	The quick brown fox jumps over the lazy dog
+   grep -i ^t demoFile.txt file1.txt - with multiple files
+	demoFile.txt:Technology is changing the world every day. 
+	demoFile.txt:Technology helps people connect, 
+	demoFile.txt:technology helps people learn, 
+	demoFile.txt:to save time, and people rely on technology to stay connected. 
+	demoFile.txt:technology also brings challenges that people must address carefully.
+	demoFile.txt:The quick brown fox jumps over the lazy dog
+	file1.txt:technology
+	file1.txt:Technology
+	
+14.grep er$ demoFile.txt - Print the matching line which end with given keyword ( $ )
+	In modern life, technology is everywhere: from phones to computer
+	Although technology makes life easier
+	Searching with grep makes text processing easier
+	
+15.grep -R Mathi New_Folder -  Search a keyword in all files in the directory
+	New_Folder/file2.txt:Mathi
+	New_Folder/demoFile.txt:Mathi
+	New_Folder/file1.txt:Mathi
+	
+16.grep -q Maaaaaaaaath demoFile.txt - It just want to search but don’t want to print on terminal
+   echo $?
+   	1 - unsuccessful in grep -q Maaaaaaaaath demoFile.txt command
