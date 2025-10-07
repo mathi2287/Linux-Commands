@@ -1,0 +1,46 @@
+1. touch 1.txt 2.txt 3.txt 4.txt - creare files
+
+2. rm 1.txt - remove file 1.txt
+
+3. ls	- list the files
+	2.txt
+	3.txt
+	4.txt
+	rm_op.txt
+	
+4. rm 2.txt 3.txt 4.txt  - remove multiple files at a time
+
+5. rm -i 1.txt  - remove a file after get a confirmation prompt
+	rm: remove regular empty file '1.txt'? Y
+
+6. rm -i 2.txt 3.txt  - raises a confirmation prompt for every file
+	rm: remove regular empty file '2.txt'? N
+	rm: remove regular empty file '3.txt'? Y
+
+7. rm -I 1.txt 2.txt 3.txt 4.txt - raises a confirmation prompt for all files at once
+	rm: remove 4 arguments? Y
+	
+8. rm -Iv 1.txt 2.txt 3.txt 4.txt - raises a confirmation prompt for all files at once and print the removed file names.
+	rm: remove 4 arguments? Y
+	removed '1.txt'
+	removed '2.txt'
+	removed '3.txt'
+	removed '4.txt'
+
+9. rm -Irv dir1 >> rm_op.txt - remove directories (-r)
+	rm: remove 1 argument recursively? y
+	removed directory 'dir1/dir2/dir3'
+	removed directory 'dir1/dir2'
+	removed directory 'dir1'
+
+10. rm -irv dir1 >> rm_op.txt 
+	rm: descend into directory 'dir1'? y
+	rm: descend into directory 'dir1/dir2'? y
+	rm: remove directory 'dir1/dir2/dir3'? y
+	rm: remove directory 'dir1/dir2'? y
+	rm: remove directory 'dir1'? y
+	removed directory 'dir1/dir2/dir3'
+	removed directory 'dir1/dir2'
+	removed directory 'dir1'
+	
+11. rm -d dir10 - remove the empty directories
